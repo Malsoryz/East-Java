@@ -16,6 +16,8 @@ public class Siswa {
     private String jurusan;
     private String kelas;
     private String alamat;
+    
+    private final int totalObject = 6;
 
     public Siswa(Integer nis, String nama, String jenisKelamin, String jurusan, String kelas, String alamat) {
         this.nis = nis;
@@ -30,26 +32,49 @@ public class Siswa {
         return nis;
     }
 
+    public void setNis(Integer nis) {
+        this.nis = nis;
+    }
+
     public String getNama() {
         return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
     public String getJenisKelamin() {
         return jenisKelamin;
     }
 
+    public void setJenisKelamin(String jenisKelamin) {
+        this.jenisKelamin = jenisKelamin;
+    }
+
     public String getJurusan() {
         return jurusan;
+    }
+
+    public void setJurusan(String jurusan) {
+        this.jurusan = jurusan;
     }
 
     public String getKelas() {
         return kelas;
     }
 
+    public void setKelas(String kelas) {
+        this.kelas = kelas;
+    }
+
     public String getAlamat() {
         return alamat;
     }
-    
-    
 
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    
 }
