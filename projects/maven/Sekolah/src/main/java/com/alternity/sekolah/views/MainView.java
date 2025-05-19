@@ -37,6 +37,7 @@ public class MainView extends javax.swing.JFrame {
         setTitle("Sekolah");
         setName("mainFrame"); // NOI18N
 
+        mainPanel.setMinimumSize(new java.awt.Dimension(400, 250));
         mainPanel.setLayout(new java.awt.BorderLayout());
 
         fileMenu.setText("File");

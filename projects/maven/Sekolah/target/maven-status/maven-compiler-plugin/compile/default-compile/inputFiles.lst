@@ -1,4 +1,5 @@
 /home/aru/git/East-Java/projects/maven/Sekolah/src/main/java/com/alternity/sekolah/Main.java
+/home/aru/git/East-Java/projects/maven/Sekolah/src/main/java/com/alternity/sekolah/controllers/SiswaController.java
 /home/aru/git/East-Java/projects/maven/Sekolah/src/main/java/com/alternity/sekolah/models/Siswa.java
 /home/aru/git/East-Java/projects/maven/Sekolah/src/main/java/com/alternity/sekolah/models/SiswaTableModel.java
 /home/aru/git/East-Java/projects/maven/Sekolah/src/main/java/com/alternity/sekolah/utils/SQLConnection.java

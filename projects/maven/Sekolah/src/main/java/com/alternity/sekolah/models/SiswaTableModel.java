@@ -16,6 +16,58 @@ public class SiswaTableModel extends AbstractTableModel {
     
     private List<Siswa> list = new ArrayList<>();
     
+    private enum SiswaColumn {
+        NO, NIS, NAMA, JK, JURUSAN, KELAS, ALAMAT;
+        
+        public static SiswaColumn fromIndex(int index) {
+            return values()[index];
+        }
+        
+        public static int count() {
+            return values().length;
+        }
+    }
+    
+    @Override
+    public int getRowCount() {
+        return list.size();
+    }
+
+    @Override
+    public int getColumnCount() {
+        return SiswaColumn.count();
+    }
+
+    @Override
+    public Object getValueAt(int rowIndex, int columnIndex) {
+        Siswa siswa = list.get(rowIndex);
+        return switch (SiswaColumn.fromIndex(columnIndex)) {
+            case NIS -> siswa.getNis();
+            case NAMA -> siswa.getNama();
+            case JK -> siswa.getJenisKelamin();
+            case JURUSAN -> siswa.getJurusan();
+            case KELAS -> siswa.getKelas();
+            case ALAMAT -> siswa.getAlamat();
+            default -> null;
+        };
+    }
+
+    @Override
+    public String getColumnName(int column) {
+        return switch (SiswaColumn.fromIndex(column)) {
+            case NO -> "No";
+            case NIS -> "NIS";
+            case NAMA -> "Nama";
+            case JK -> "Jenis Kelamin";
+            case JURUSAN -> "Jurusan";
+            case KELAS -> "Kelas";
+            case ALAMAT -> "Alamat";
+            default -> null;
+        };
+    }
+    
+    
+    
     public void insert(Siswa siswa) {
         list.add(siswa);
         fireTableDataChanged();
@@ -40,19 +92,5 @@ public class SiswaTableModel extends AbstractTableModel {
         fireTableDataChanged();
     }
 
-    @Override
-    public int getRowCount() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public int getColumnCount() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Object getValueAt(int rowIndex, int columnIndex) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
     
 }

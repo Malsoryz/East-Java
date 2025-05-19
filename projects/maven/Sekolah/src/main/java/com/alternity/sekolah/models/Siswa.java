@@ -75,6 +75,4 @@ public class Siswa {
     public void setAlamat(String alamat) {
         this.alamat = alamat;
     }
-
-    
 }
