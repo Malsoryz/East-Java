@@ -17,7 +17,7 @@ public class SiswaTableModel extends AbstractTableModel {
     private List<Siswa> list = new ArrayList<>();
     
     private enum SiswaColumn {
-        NO, NIS, NAMA, JK, JURUSAN, KELAS, ALAMAT;
+        NO, NIS, NAMA, JK, KELAS, JURUSAN, ALAMAT;
         
         public static SiswaColumn fromIndex(int index) {
             return values()[index];
@@ -41,12 +41,16 @@ public class SiswaTableModel extends AbstractTableModel {
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         Siswa siswa = list.get(rowIndex);
+        String jenisKelamin = "";
+        if ("L".equals(siswa.getJenisKelamin())) jenisKelamin = "Laki-Laki"; 
+        else if ("P".equals(siswa.getJenisKelamin())) jenisKelamin = "Perempuan";
         return switch (SiswaColumn.fromIndex(columnIndex)) {
+            case NO -> rowIndex + 1;
             case NIS -> siswa.getNis();
             case NAMA -> siswa.getNama();
-            case JK -> siswa.getJenisKelamin();
-            case JURUSAN -> siswa.getJurusan();
+            case JK -> jenisKelamin;
             case KELAS -> siswa.getKelas();
+            case JURUSAN -> siswa.getJurusan();
             case ALAMAT -> siswa.getAlamat();
             default -> null;
         };
@@ -59,8 +63,8 @@ public class SiswaTableModel extends AbstractTableModel {
             case NIS -> "NIS";
             case NAMA -> "Nama";
             case JK -> "Jenis Kelamin";
-            case JURUSAN -> "Jurusan";
             case KELAS -> "Kelas";
+            case JURUSAN -> "Jurusan";
             case ALAMAT -> "Alamat";
             default -> null;
         };

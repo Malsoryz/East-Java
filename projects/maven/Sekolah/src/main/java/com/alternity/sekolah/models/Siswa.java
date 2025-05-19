@@ -13,18 +13,18 @@ public class Siswa {
     private Integer nis;
     private String nama;
     private String jenisKelamin;
-    private String jurusan;
     private String kelas;
+    private String jurusan;
     private String alamat;
     
     private final int totalObject = 6;
 
-    public Siswa(Integer nis, String nama, String jenisKelamin, String jurusan, String kelas, String alamat) {
+    public Siswa(Integer nis, String nama, String jenisKelamin, String kelas, String jurusan, String alamat) {
         this.nis = nis;
         this.nama = nama;
         this.jenisKelamin = jenisKelamin;
-        this.jurusan = jurusan;
         this.kelas = kelas;
+        this.jurusan = jurusan;
         this.alamat = alamat;
     }
 
@@ -52,20 +52,20 @@ public class Siswa {
         this.jenisKelamin = jenisKelamin;
     }
 
-    public String getJurusan() {
-        return jurusan;
-    }
-
-    public void setJurusan(String jurusan) {
-        this.jurusan = jurusan;
-    }
-
     public String getKelas() {
         return kelas;
     }
 
     public void setKelas(String kelas) {
         this.kelas = kelas;
+    }
+    
+    public String getJurusan() {
+        return jurusan;
+    }
+
+    public void setJurusan(String jurusan) {
+        this.jurusan = jurusan;
     }
 
     public String getAlamat() {

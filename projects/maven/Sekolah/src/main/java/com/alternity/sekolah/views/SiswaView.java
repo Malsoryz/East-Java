@@ -288,6 +288,11 @@ public class SiswaView extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
+        tableSiswa.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tableSiswaMouseClicked(evt);
+            }
+        });
         jScrollPane3.setViewportView(tableSiswa);
 
         jPanel9.add(jScrollPane3, java.awt.BorderLayout.CENTER);
@@ -367,6 +372,10 @@ public class SiswaView extends javax.swing.JFrame {
     private void buttonSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonSimpanActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_buttonSimpanActionPerformed
+
+    private void tableSiswaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableSiswaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tableSiswaMouseClicked
 
     /**
      * @param args the command line arguments
