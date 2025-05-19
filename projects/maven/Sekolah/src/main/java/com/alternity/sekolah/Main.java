@@ -5,7 +5,7 @@
 package com.alternity.sekolah;
 
 import com.alternity.sekolah.controllers.SiswaController;
-import com.alternity.sekolah.utils.SQLConnection;
+import com.alternity.sekolah.models.SiswaModel;
 import com.alternity.sekolah.views.MainView;
 import com.alternity.sekolah.views.SiswaView;
 import java.sql.Connection;
@@ -20,10 +20,10 @@ public class Main {
     public static Connection mysql;
 
     public static void main(String[] args) throws SQLException {
-        mysql = (Connection) SQLConnection.ConnectDB();
         MainView homeView = new MainView();
         SiswaView siswaView = new SiswaView();
         siswaView.setVisible(true);
+        new SiswaModel();
         new SiswaController();
     }
 }

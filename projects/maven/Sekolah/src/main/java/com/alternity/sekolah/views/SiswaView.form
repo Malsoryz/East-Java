@@ -512,9 +512,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="labelPencarian" min="-2" pref="162" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="comboBoxPencarianKategori" min="-2" pref="197" max="-2" attributes="0"/>
+                                  <Component id="comboBoxPencarianKategori" min="-2" pref="152" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="fieldPencarian" pref="201" max="32767" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="buttonPencarian" min="-2" pref="66" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="fieldPencarian" pref="246" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -526,8 +529,9 @@
                                       <Component id="labelPencarian" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="comboBoxPencarianKategori" alignment="3" min="-2" max="-2" attributes="0"/>
                                       <Component id="fieldPencarian" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="buttonPencarian" alignment="3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="24" max="32767" attributes="0"/>
+                                  <EmptySpace pref="23" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -561,6 +565,23 @@
                             </Property>
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[82, 34]"/>
+                            </Property>
+                          </Properties>
+                          <AuxValues>
+                            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+                          </AuxValues>
+                        </Component>
+                        <Component class="javax.swing.JButton" name="buttonPencarian">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="Cari"/>
+                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[72, 34]"/>
+                            </Property>
+                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[72, 34]"/>
+                            </Property>
+                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                              <Dimension value="[72, 34]"/>
                             </Property>
                           </Properties>
                           <AuxValues>

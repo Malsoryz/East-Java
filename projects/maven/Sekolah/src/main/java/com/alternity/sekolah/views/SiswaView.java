@@ -62,6 +62,7 @@ public class SiswaView extends javax.swing.JFrame {
         labelPencarian = new javax.swing.JLabel();
         comboBoxPencarianKategori = new javax.swing.JComboBox<>();
         fieldPencarian = new javax.swing.JTextField();
+        buttonPencarian = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
         tableSiswa = new javax.swing.JTable();
 
@@ -245,6 +246,11 @@ public class SiswaView extends javax.swing.JFrame {
         fieldPencarian.setMinimumSize(new java.awt.Dimension(64, 34));
         fieldPencarian.setPreferredSize(new java.awt.Dimension(82, 34));
 
+        buttonPencarian.setText("Cari");
+        buttonPencarian.setMaximumSize(new java.awt.Dimension(72, 34));
+        buttonPencarian.setMinimumSize(new java.awt.Dimension(72, 34));
+        buttonPencarian.setPreferredSize(new java.awt.Dimension(72, 34));
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -252,9 +258,12 @@ public class SiswaView extends javax.swing.JFrame {
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addComponent(labelPencarian, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(comboBoxPencarianKategori, javax.swing.GroupLayout.PREFERRED_SIZE, 197, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(fieldPencarian, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE))
+                .addComponent(comboBoxPencarianKategori, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(fieldPencarian, javax.swing.GroupLayout.DEFAULT_SIZE, 201, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(buttonPencarian, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,8 +272,9 @@ public class SiswaView extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(labelPencarian)
                     .addComponent(comboBoxPencarianKategori, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(fieldPencarian, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(24, Short.MAX_VALUE))
+                    .addComponent(fieldPencarian, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(buttonPencarian, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         jPanel9.add(jPanel10, java.awt.BorderLayout.PAGE_START);
@@ -416,6 +426,7 @@ public class SiswaView extends javax.swing.JFrame {
     public static javax.swing.JButton buttonBatal;
     public static javax.swing.JButton buttonHapus;
     public static javax.swing.JButton buttonKeluar;
+    public static javax.swing.JButton buttonPencarian;
     public static javax.swing.JButton buttonSegarkan;
     public static javax.swing.JButton buttonSimpan;
     public static javax.swing.JButton buttonTambah;
