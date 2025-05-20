@@ -1,1 +1,4 @@
-/projects/Sekolah/target/
+**/build/
+**/dist/
+**/nbproject/private/
+**/target/
